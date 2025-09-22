@@ -20,9 +20,9 @@ export const AuthProvider = ({ children }) => {
   const login = (username, token, role) => {
     localStorage.setItem('token', token);
     localStorage.setItem('username', username);
-    localStorage.setItem('role', role); // This is the line that was likely missing
+    localStorage.setItem('role', role); 
 
-    // Set both username and role in the user state
+    
     setUser({ username, role });
   };
 
